@@ -1,0 +1,19 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Envsensor
+  @model
+  @auth(rules: [
+    { allow: private, provider: iam, operations: [create, read, update] },
+    { allow: owner }
+  ]) {
+  id: ID!
+  type: String! @index(name: "byTypeTimestamp", queryField: "envsensorsByTimestamp", sortKeyFields: ["timestamp"])
+  deviceid: String!
+  timestamp: AWSTimestamp!
+  illuminance: Float!
+  power: Int!
+  humidity: Float!
+  temperature: Float!
+}

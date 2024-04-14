@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-streamtest-dev-edf48-authRole",
+      "UnauthRoleArn": "arn:aws:iam::185308582104:role/amplify-streamtest-dev-edf48-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::185308582104:role/amplify-streamtest-dev-edf48-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-streamtest-dev-edf48-deployment",
+      "UnauthRoleName": "amplify-streamtest-dev-edf48-unauthRole",
+      "StackName": "amplify-streamtest-dev-edf48",
+      "StackId": "arn:aws:cloudformation:us-east-1:185308582104:stack/amplify-streamtest-dev-edf48/30c2ec80-f87f-11ee-ba1b-12fd578485a1",
+      "AmplifyAppId": "dyomt53bh7xpc"
+    },
+    "categories": {
+      "auth": {
+        "streamtest29cce16f": {}
+      },
+      "api": {
+        "streamtest": {}
+      }
+    }
+  }
+}
