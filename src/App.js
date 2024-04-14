@@ -19,7 +19,7 @@ function App({ signOut, user }) {
                         <button onClick={signOut}>Sign out</button>
                     </>
                 ):(
-                  <h3>You do not have authority</h3>
+                  <h3>You don't have authority</h3>
                 )}
             </header>
         </div>
