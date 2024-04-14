@@ -15,11 +15,11 @@ function App({ signOut, user }) {
                 <h2>Hello React with AWS</h2>
                 {user ? (
                     <>
-                        <h3>„‚ÍŒ ŒÀ‚ğ‚Á‚Ä‚¢‚Ü‚·F{user.username}</h3>
+                        <h3>You have authorityF{user.username}</h3>
                         <button onClick={signOut}>Sign out</button>
                     </>
-                ) : (
-                    <h3>Œ ŒÀ‚ª‚ ‚è‚Ü‚¹‚ñ</h3>
+                ):(
+                  <h3>You do not have authority</h3>
                 )}
             </header>
         </div>
