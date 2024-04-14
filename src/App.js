@@ -15,7 +15,7 @@ function App({ signOut, user }) {
                 <h2>Hello React with AWS</h2>
                 {user ? (
                     <>
-                        <h3>You have authorityÅF{user.username}</h3>
+                        <h3>You have authority:{user.username}</h3>
                         <button onClick={signOut}>Sign out</button>
                     </>
                 ):(
